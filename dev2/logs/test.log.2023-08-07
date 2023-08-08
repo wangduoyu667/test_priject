@@ -1,0 +1,60 @@
+2023-08-07 08:51:53,311 INFO [root] [test_page1_login.py(login_case] [line:36] - 最大化窗口
+2023-08-07 08:51:53,321 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-07 08:51:53,438 INFO [root] [basetoolclass.py(info_log] [line:85] - 切换外部登录
+2023-08-07 08:51:53,438 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-07 08:51:53,530 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入用户名wanghuimin
+2023-08-07 08:51:53,531 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-07 08:51:53,595 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入密码Jinmaomj
+2023-08-07 08:51:53,595 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-07 08:51:53,649 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-home')
+2023-08-07 08:51:56,882 INFO [root] [basetoolclass.py(info_log] [line:85] - 截图路径:C:\Users\86151\PycharmProjects\pythonProject10\dev2\screenshot,截图名称2023-08-07-08-51-56.png
+2023-08-07 08:52:02,119 INFO [root] [test_page1_login.py(login_case] [line:36] - 最大化窗口
+2023-08-07 08:52:02,119 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-07 08:52:02,201 INFO [root] [basetoolclass.py(info_log] [line:85] - 切换外部登录
+2023-08-07 08:52:02,202 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-07 08:52:02,324 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入用户名wanghuimin
+2023-08-07 08:52:02,324 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-07 08:52:02,425 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入密码Ux&9=%SwutS3
+2023-08-07 08:52:02,426 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-07 08:52:02,495 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-home')
+2023-08-07 08:52:05,709 INFO [root] [basetoolclass.py(info_log] [line:85] - 截图路径:C:\Users\86151\PycharmProjects\pythonProject10\dev2\screenshot,截图名称2023-08-07-08-52-05.png
+2023-08-07 08:52:10,968 INFO [root] [test_page1_login.py(login_case] [line:36] - 最大化窗口
+2023-08-07 08:52:10,974 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-07 08:52:11,065 INFO [root] [basetoolclass.py(info_log] [line:85] - 切换外部登录
+2023-08-07 08:52:11,065 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-07 08:52:11,214 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入用户名wanghuimin
+2023-08-07 08:52:11,214 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-07 08:52:11,309 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入密码123456
+2023-08-07 08:52:11,309 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-07 08:52:11,381 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-home')
+2023-08-07 08:52:12,434 INFO [root] [basetoolclass.py(info_log] [line:85] - 获取断言元素('id', 'tab-home')
+2023-08-07 10:51:47,073 INFO [root] [test_page1_login.py(login_case] [line:36] - 最大化窗口
+2023-08-07 10:51:47,073 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-07 10:51:47,203 INFO [root] [basetoolclass.py(info_log] [line:85] - 切换外部登录
+2023-08-07 10:51:47,204 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-07 10:51:47,318 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入用户名wanghuimin
+2023-08-07 10:51:47,319 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-07 10:51:47,392 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入密码Jinmaomj
+2023-08-07 10:51:47,392 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-07 10:51:47,446 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-home')
+2023-08-07 10:51:50,605 INFO [root] [basetoolclass.py(info_log] [line:85] - 截图路径:C:\Users\86151\PycharmProjects\pythonProject10\dev2\screenshot,截图名称2023-08-07-10-51-50.png
+2023-08-07 10:51:56,925 INFO [root] [test_page1_login.py(login_case] [line:36] - 最大化窗口
+2023-08-07 10:51:56,925 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-07 10:51:56,994 INFO [root] [basetoolclass.py(info_log] [line:85] - 切换外部登录
+2023-08-07 10:51:56,994 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-07 10:51:57,124 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入用户名wanghuimin
+2023-08-07 10:51:57,124 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-07 10:51:57,228 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入密码Ux&9=%SwutS3
+2023-08-07 10:51:57,229 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-07 10:51:57,278 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-home')
+2023-08-07 10:52:00,453 INFO [root] [basetoolclass.py(info_log] [line:85] - 截图路径:C:\Users\86151\PycharmProjects\pythonProject10\dev2\screenshot,截图名称2023-08-07-10-52-00.png
+2023-08-07 10:52:06,644 INFO [root] [test_page1_login.py(login_case] [line:36] - 最大化窗口
+2023-08-07 10:52:06,646 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-07 10:52:06,715 INFO [root] [basetoolclass.py(info_log] [line:85] - 切换外部登录
+2023-08-07 10:52:06,716 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-07 10:52:06,845 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入用户名wanghuimin
+2023-08-07 10:52:06,845 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-07 10:52:06,953 INFO [root] [basetoolclass.py(info_log] [line:85] - 输入密码123456
+2023-08-07 10:52:06,955 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-07 10:52:07,022 INFO [root] [basetoolclass.py(Wait_element] [line:18] - 寻找等待定位元素('id', 'tab-home')
+2023-08-07 10:52:07,585 INFO [root] [basetoolclass.py(info_log] [line:85] - 获取断言元素('id', 'tab-home')
