@@ -25,8 +25,9 @@ class Test_suit(unittest.TestCase,Login):
         print("用例运行结束")
     @file_data('./config/config.yaml')
     def test_02(self,usernames,pasward):
-        self.login_case(usernames,pasward)
-        self.assertTrue(self.ele_dispaly(self.home_button),True)
+        # self.login_case(usernames,pasward)
+        # self.assertTrue(self.ele_dispaly(self.home_button),True)
+        self.assertTrue(self.login_case(usernames,pasward), True)
 if __name__ == '__main__':
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     current_dir = os.path.dirname(os.path.abspath(__file__))
