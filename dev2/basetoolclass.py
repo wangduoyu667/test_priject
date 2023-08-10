@@ -61,7 +61,7 @@ class Base_geturl:
     def getLogger(self):
         # 2.创建日志器对象 / 设置日志级
         logger = logging.getLogger("root")
-        logger.setLevel(level=logging.DEBUG)
+        logger.setLevel(level=logging.INFO)
         # 3.创建输出到控制台 / 文件
         ls = logging.StreamHandler()  # 按天分割，分割为5个
         # 判断log文件夹是否存在，不存在即创建
