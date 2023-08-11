@@ -82,6 +82,7 @@ class Base_geturl:
         self.loggers = logger
         return self.loggers
     def info_log(self,msg="运行中"):
+        #a=self.getLogger().info(msg)
         return self.getLogger().info(msg)
     def assert_ele(self,loc):
         self.info_log(msg="获取断言元素{}".format(loc))

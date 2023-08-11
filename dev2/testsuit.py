@@ -3,6 +3,7 @@ import os
 import time
 import unittest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from basetoolclass import Base_geturl
 from dev2.pageobject.test_page1_login import Login
@@ -11,6 +12,9 @@ from ddt import file_data , ddt
 @ddt
 class Test_suit(unittest.TestCase,Login):
     def setUp(self) -> None:
+        # opt = Options()  # 新建参数对象
+        # opt.add_argument("--headless")  # 无头
+        # opt.add_argument("--disbale-gpu")  # 无gpu图形化界面
         print("开始运行用例")
         url='http://172.17.19.64:30010/login'
         #url = "http://10.160.152.222/home"
@@ -20,7 +24,6 @@ class Test_suit(unittest.TestCase,Login):
         print("打开浏览器")
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
-        time.sleep(1)
         self.driver.quit()
         print("用例运行结束")
     @file_data('./config/config.yaml')
@@ -29,17 +32,14 @@ class Test_suit(unittest.TestCase,Login):
         # self.assertTrue(self.ele_dispaly(self.home_button),True)
         self.assertTrue(self.login_case(usernames,pasward), True)
 if __name__ == '__main__':
-    unittest.main()
-    # now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    # current_dir = os.path.dirname(os.path.abspath(__file__))
-    # report_path = os.path.join(current_dir, "report", "report2" + now + ".html")
-    #
-    # discover=unittest.defaultTestLoader.discover(".")#加载所有.py的文件用例
-    # with open(report_path, "wb") as report_file:
-    #     runner = HTMLTestRunner(stream=report_file, title="Test Report", description="Test Results")
-    #     runner.run(discover)
-
-
+    #unittest.main()
+    now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    report_path = os.path.join(current_dir, "report", "report2" + now + ".html")
+    discover=unittest.defaultTestLoader.discover(current_dir,"testsuit.py")#加载所有.py的文件用例
+    with open(report_path, "wb") as report_file:
+        runner = HTMLTestRunner(stream=report_file, title="Test Report", description="Test Results")
+        runner.run(discover)
     # now = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")#获取当前时间
     # Htmlfile = r"C:\Users\86151\PycharmProjects\pythonProject10\dev2\report\report2"+now+".html"#报告路径
     # f=open(Htmlfile,'wb')#打开二进制文件
