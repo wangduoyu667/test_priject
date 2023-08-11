@@ -29,14 +29,18 @@ class Test_suit(unittest.TestCase,Login):
         # self.assertTrue(self.ele_dispaly(self.home_button),True)
         self.assertTrue(self.login_case(usernames,pasward), True)
 if __name__ == '__main__':
-    now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    report_path = os.path.join(current_dir, "report", "report2" + now + ".html")
+    unittest.main()
+    # now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    # current_dir = os.path.dirname(os.path.abspath(__file__))
+    # report_path = os.path.join(current_dir, "report", "report2" + now + ".html")
+    #
+    # discover=unittest.defaultTestLoader.discover(".")#加载所有.py的文件用例
+    # with open(report_path, "wb") as report_file:
+    #     runner = HTMLTestRunner(stream=report_file, title="Test Report", description="Test Results")
+    #     runner.run(discover)
+
+
     # now = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")#获取当前时间
-    discover=unittest.defaultTestLoader.discover(".")#加载所有.py的文件用例
-    with open(report_path, "wb") as report_file:
-        runner = HTMLTestRunner(stream=report_file, title="Test Report", description="Test Results")
-        runner.run(discover)
     # Htmlfile = r"C:\Users\86151\PycharmProjects\pythonProject10\dev2\report\report2"+now+".html"#报告路径
     # f=open(Htmlfile,'wb')#打开二进制文件
     # runner=HTMLTestRunner.HTMLTestRunner(stream=f,title='美居测试报告',verbosity=1,description='详细测试用例结果')
