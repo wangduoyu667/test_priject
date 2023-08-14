@@ -12,6 +12,9 @@ from ddt import file_data , ddt
 @ddt
 class Test_suit(unittest.TestCase,Login,Creat_cb):
     def setUp(self) -> None:
+        # opt = Options()  # 新建参数对象
+        # opt.add_argument("--headless")  # 无头
+        # opt.add_argument("--disbale-gpu")  # 无gpu图形化界面
         print("开始运行用例")
         url='http://172.17.19.64:30010/login'
         #url = "http://10.160.152.222/home"

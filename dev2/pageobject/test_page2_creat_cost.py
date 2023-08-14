@@ -1,6 +1,6 @@
+from datetime import datetime
 import os
 import time
-from datetime import datetime
 from selenium.webdriver.common.action_chains import ActionChains
 from ..basetoolclass import Base_geturl
 from selenium.webdriver.common.by import By
@@ -28,6 +28,7 @@ class Creat_cb(Base_geturl):
         click_file_button=(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div/di'
                                     'v/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
         click_file_button2=(By.XPATH,'//*[text()="选择附件"]')
+        update_Attachments=(By.XPATH,'/html/body/div[2]/div/div[2]/div/form/div/div[1]/div/div/div/input')
         click_file_button3=(By.CSS_SELECTOR,"body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small")
         click_file_button4=(By.CSS_SELECTOR,'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
         asert_input_file=(By.XPATH,"//*[text()='删除']")
