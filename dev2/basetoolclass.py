@@ -12,6 +12,7 @@ class Base_geturl:
         loggers = None
         self.driver=driver
         self.imgPath=r'C:\Users\86151\PycharmProjects\pythonProject10\dev2\test_report'
+
     def find_element(self, loc):  # loc传入元组,原则包含定位类型、定位元素表达式
             return self.driver.find_element(*loc)
     def Wait_element(self,loc):#元素等待，返回元素
@@ -26,7 +27,7 @@ class Base_geturl:
             self.screenshort()
             print("未找到元素{}".format(loc))
             return False
-    def send_keys(self,loc,value):#等待元素并输入
+    def send_keys(self,loc,value=None):#等待元素并输入
         self.Wait_element(loc).send_keys(value)
     def click(self,loc):
         self.Wait_element(loc).click()
@@ -38,10 +39,15 @@ class Base_geturl:
     def tishi(self,loc):
         if self.Wait_element(loc).text:
             return self.Wait_element(loc).text
-    def selcet_ele(self,loc):#下拉框方法
+    def selcet(self,loc,index=0):#下拉框方法
         value=self.find_element(loc)
         select_eles=Select(value)
-        select_eles.select_by_index(0)#通过索引选择下拉元素
+        select_eles.select_by_index(index)#通过索引选择下拉元素
+    def no_selcet(self,loc,loc2):#非下拉框方法
+         self.click(loc)
+         time.sleep(0.2)
+         self.click(loc2)
+         return print("获取下拉框元素")
     def input_file(self,loc,filepath):#传输上传附件inupt  XPTH
         print("上传附件{}中".format(filepath))
         self.find_element(loc).sendkeys(filepath)
@@ -91,4 +97,6 @@ class Base_geturl:
             return a
         else:a=False
         return a
+    def input_Attachments(self,loc,file):
+        self.send_keys(loc,file)
 
