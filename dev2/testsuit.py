@@ -30,10 +30,10 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
     def test_02(self):
         """上传文件-删除"""
         self.assertTrue(self.inputfile_delete(),True)
-    # @file_data('./config/config.yaml')
-    # def test_03(self,usernames,pasward):
-    #     """登录测试"""
-    #     self.assertTrue(self.login_case(usernames,pasward), True)
+    @file_data('./config/config.yaml')
+    def test_03(self,usernames,pasward):
+        """登录测试"""
+        self.assertTrue(self.login_case(usernames,pasward), True)
     def test_04(self):
         """创建入驻合同"""
         self.creat_cost()
