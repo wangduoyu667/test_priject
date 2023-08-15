@@ -35,6 +35,7 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
     #     """登录测试"""
     #     self.assertTrue(self.login_case(usernames,pasward), True)
     def test_04(self):
+        """创建入驻合同"""
         self.creat_cost()
 if __name__ == '__main__':
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
