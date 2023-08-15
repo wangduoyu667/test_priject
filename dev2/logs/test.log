@@ -1663,3 +1663,376 @@
 2023-08-15 11:23:51,256 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-message-box__wrapper > div > div.el-message-box__btns > button.el-button.el-button--default.el-button--small.el-button--primary > span')
 2023-08-15 11:23:51,306 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除成功']")
 2023-08-15 11:23:51,860 INFO [root] [basetoolclass.py(info_log] [line:92] - 获取断言元素('xpath', "//*[text()='删除成功']")
+2023-08-15 11:37:19,685 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:37:19,740 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:37:19,740 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:37:19,837 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:37:19,840 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:37:19,912 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:37:19,915 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:37:19,969 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:37:21,361 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:37:21,413 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:37:22,038 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:37:22,210 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:37:26,748 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:37:26,833 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:37:27,398 INFO [root] [basetoolclass.py(info_log] [line:92] - 获取断言元素('xpath', "//*[text()='删除']")
+2023-08-15 11:37:28,413 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:37:36,883 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:37:36,954 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:37:36,954 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:37:37,083 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:37:37,083 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:37:37,161 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:37:37,162 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:37:37,214 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:37:39,015 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:37:39,086 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:37:39,220 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:37:39,399 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:37:44,097 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:37:44,151 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:37:53,180 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:37:53,241 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:37:53,242 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:37:53,350 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:37:53,352 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:37:53,420 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:37:53,420 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:37:53,485 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:37:54,344 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:37:54,427 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:37:54,596 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入合同名称"]')
+2023-08-15 11:37:55,033 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择开始日期"]')
+2023-08-15 11:37:55,137 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择结束日期"]')
+2023-08-15 11:37:55,631 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[1]/div[1]')
+2023-08-15 11:37:56,065 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@class="el-radio__inner"][1]')
+2023-08-15 11:37:56,395 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:41:03,289 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:41:03,376 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:41:03,376 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:41:03,511 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:41:03,513 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:41:03,615 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:41:03,615 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:41:03,688 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:41:04,588 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:41:04,691 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:41:04,827 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:41:05,047 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:41:09,817 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:41:09,881 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:41:13,268 INFO [root] [basetoolclass.py(info_log] [line:92] - 截图路径:C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot,截图名称2023-08-15-11-41-12.png
+2023-08-15 11:41:14,278 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:41:19,102 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:41:19,178 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:41:19,178 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:41:19,311 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:41:19,311 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:41:19,403 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:41:19,403 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:41:19,471 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:41:20,309 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:41:20,416 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:41:20,549 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:41:20,748 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:41:24,865 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:41:25,034 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:41:32,750 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:41:32,838 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:41:32,840 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:41:32,988 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:41:32,988 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:41:33,082 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:41:33,083 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:41:33,154 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:41:34,003 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:41:34,092 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:41:34,241 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入合同名称"]')
+2023-08-15 11:41:34,658 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择开始日期"]')
+2023-08-15 11:41:34,771 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择结束日期"]')
+2023-08-15 11:41:35,164 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[1]/div[1]')
+2023-08-15 11:41:35,417 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@class="el-radio__inner"][1]')
+2023-08-15 11:41:35,583 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:42:22,544 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:42:22,629 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:42:22,632 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:42:22,766 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:42:22,766 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:42:22,866 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:42:22,867 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:42:22,944 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:42:23,801 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:42:23,905 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:42:24,048 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:42:24,278 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:42:29,025 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:42:29,082 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:42:29,650 INFO [root] [basetoolclass.py(info_log] [line:92] - 获取断言元素('xpath', "//*[text()='删除']")
+2023-08-15 11:42:30,665 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:42:35,360 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:42:35,436 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:42:35,438 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:42:35,558 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:42:35,561 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:42:35,650 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:42:35,650 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:42:35,720 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:42:36,555 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:42:36,651 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:42:36,798 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:42:37,020 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:42:41,698 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:42:41,747 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:42:49,362 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:42:49,438 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:42:49,440 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:42:49,572 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:42:49,572 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:42:49,661 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:42:49,662 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:42:49,727 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:42:50,570 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:42:50,701 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:42:50,839 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:42:51,049 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:42:55,348 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:42:55,397 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:42:58,741 INFO [root] [basetoolclass.py(info_log] [line:92] - 截图路径:C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot,截图名称2023-08-15-11-42-58.png
+2023-08-15 11:42:59,756 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:42:59,807 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入合同名称"]')
+2023-08-15 11:43:00,125 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择开始日期"]')
+2023-08-15 11:43:00,238 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择结束日期"]')
+2023-08-15 11:43:00,406 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[1]/div[1]')
+2023-08-15 11:43:00,498 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@class="el-radio__inner"][1]')
+2023-08-15 11:47:38,636 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:47:38,718 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:47:38,719 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:47:38,852 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:47:38,852 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:47:38,940 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:47:38,941 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:47:39,011 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:47:39,861 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:47:39,953 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:47:40,164 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:47:40,401 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:47:45,986 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:47:46,056 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:47:46,056 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:47:46,185 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:47:46,185 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:47:46,281 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:47:46,281 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:47:46,354 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:47:47,173 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:47:47,269 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:47:47,400 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:47:47,605 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:47:52,884 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:47:52,971 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:47:52,971 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:47:53,104 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:47:53,104 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:47:53,195 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:47:53,200 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:47:53,267 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:47:54,554 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:47:54,620 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:47:54,765 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:47:54,940 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:51:08,296 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:51:08,384 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:51:08,384 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:51:08,516 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:51:08,516 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:51:08,613 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:51:08,613 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:51:08,682 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:51:09,513 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:51:09,621 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:51:09,833 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:51:10,054 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:51:14,908 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:51:14,963 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:51:18,191 INFO [root] [basetoolclass.py(info_log] [line:92] - 截图路径:C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot,截图名称2023-08-15-11-51-18.png
+2023-08-15 11:51:19,197 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:51:23,761 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:51:23,848 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:51:23,848 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:51:24,007 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:51:24,007 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:51:24,102 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:51:24,106 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:51:24,191 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:51:25,035 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:51:25,128 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:51:25,264 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:51:25,470 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:51:30,864 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:51:30,908 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:51:38,540 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:51:38,630 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:51:38,630 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:51:38,768 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:51:38,768 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:51:38,872 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:51:38,872 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:51:38,957 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:51:39,778 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:51:39,883 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:51:40,016 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:51:40,240 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:51:44,447 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:51:44,497 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:51:47,786 INFO [root] [basetoolclass.py(info_log] [line:92] - 截图路径:C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot,截图名称2023-08-15-11-51-47.png
+2023-08-15 11:51:48,796 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:51:48,842 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入合同名称"]')
+2023-08-15 11:51:49,107 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择开始日期"]')
+2023-08-15 11:51:49,196 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择结束日期"]')
+2023-08-15 11:51:49,348 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[1]/div[1]')
+2023-08-15 11:51:49,415 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@class="el-radio__inner"][1]')
+2023-08-15 11:53:42,312 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:53:42,394 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:53:42,397 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:53:42,516 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:53:42,518 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:53:42,599 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:53:42,599 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:53:42,670 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:53:43,621 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:53:43,721 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:53:43,934 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:53:44,276 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:53:59,229 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:53:59,321 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:53:59,324 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:53:59,462 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:53:59,462 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:53:59,559 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:53:59,559 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:53:59,634 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:54:00,485 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:54:00,605 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:54:00,771 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:54:01,015 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:54:07,740 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:54:07,811 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:54:15,504 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:54:15,604 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:54:15,604 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:54:15,746 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:54:15,751 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:54:15,851 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:54:15,851 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:54:15,922 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:54:16,790 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:54:16,892 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:54:17,069 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:54:17,311 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:59:21,016 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:59:21,104 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:59:21,104 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:59:21,235 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:59:21,235 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:59:21,338 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:59:21,338 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:59:21,422 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:59:22,289 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:59:22,363 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:59:22,544 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:59:22,798 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:59:27,443 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:59:27,492 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:59:30,779 INFO [root] [basetoolclass.py(info_log] [line:92] - 截图路径:C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot,截图名称2023-08-15-11-59-30.png
+2023-08-15 11:59:31,784 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 11:59:36,450 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:59:36,522 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:59:36,524 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:59:36,648 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:59:36,648 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:59:36,735 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:59:36,736 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:59:36,799 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:59:37,606 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:59:37,702 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:59:37,831 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:59:38,036 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:59:44,206 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:59:44,269 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 11:59:51,860 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 11:59:51,943 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 11:59:51,944 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 11:59:52,070 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 11:59:52,073 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 11:59:52,170 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 11:59:52,175 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 11:59:52,244 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 11:59:53,103 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 11:59:53,191 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 11:59:53,332 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 11:59:53,523 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 11:59:57,212 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 11:59:57,251 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 12:00:00,475 INFO [root] [basetoolclass.py(info_log] [line:92] - 截图路径:C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot,截图名称2023-08-15-12-00-00.png
+2023-08-15 12:00:01,479 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 12:00:01,541 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入合同名称"]')
+2023-08-15 12:00:01,814 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择开始日期"]')
+2023-08-15 12:00:01,944 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择结束日期"]')
+2023-08-15 12:00:02,119 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[1]/div[1]')
+2023-08-15 12:00:02,214 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@class="el-radio__inner"][1]')
+2023-08-15 12:00:30,239 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 12:00:30,318 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 12:00:30,321 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 12:00:30,443 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 12:00:30,443 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 12:00:30,527 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 12:00:30,527 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 12:00:30,596 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 12:00:31,478 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 12:00:31,567 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 12:00:31,701 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 12:00:31,908 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 12:00:37,155 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 12:00:37,213 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 12:00:38,291 INFO [root] [basetoolclass.py(info_log] [line:92] - 获取断言元素('xpath', "//*[text()='删除']")
+2023-08-15 12:00:39,303 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 12:00:44,402 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 12:00:44,471 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 12:00:44,471 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 12:00:44,590 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 12:00:44,591 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 12:00:44,680 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 12:00:44,680 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 12:00:44,739 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 12:00:45,562 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 12:00:45,669 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 12:00:45,906 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 12:00:46,015 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 12:00:52,471 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 12:00:52,533 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 12:00:53,324 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-message-box__wrapper > div > div.el-message-box__btns > button.el-button.el-button--default.el-button--small.el-button--primary > span')
+2023-08-15 12:00:53,390 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除成功']")
+2023-08-15 12:00:53,972 INFO [root] [basetoolclass.py(info_log] [line:92] - 获取断言元素('xpath', "//*[text()='删除成功']")
+2023-08-15 12:00:58,440 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('id', 'tab-outside')
+2023-08-15 12:00:58,521 INFO [root] [basetoolclass.py(info_log] [line:92] - 切换外部登录
+2023-08-15 12:00:58,521 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入用户名称"]')
+2023-08-15 12:00:58,658 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入用户名wanghuimin
+2023-08-15 12:00:58,658 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入登录密码"]')
+2023-08-15 12:00:58,749 INFO [root] [basetoolclass.py(info_log] [line:92] - 输入密码123456
+2023-08-15 12:00:58,751 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', '#pane-outside > form > div:nth-child(4) > div > button > span')
+2023-08-15 12:00:58,814 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')
+2023-08-15 12:01:00,618 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="成本合同管理"]')
+2023-08-15 12:01:00,671 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='创建供方采购合同']")
+2023-08-15 12:01:00,806 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
+2023-08-15 12:01:01,004 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[text()="选择附件"]')
+2023-08-15 12:01:05,565 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small')
+2023-08-15 12:01:05,622 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', "//*[text()='删除']")
+2023-08-15 12:01:06,682 INFO [root] [basetoolclass.py(info_log] [line:92] - 获取断言元素('xpath', "//*[text()='删除']")
+2023-08-15 12:01:07,685 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('css selector', 'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+2023-08-15 12:01:07,734 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="请输入合同名称"]')
+2023-08-15 12:01:07,969 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择开始日期"]')
+2023-08-15 12:01:08,082 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@placeholder="选择结束日期"]')
+2023-08-15 12:01:08,188 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@id="app"]/div/div/div[2]/div[1]/div[1]')
+2023-08-15 12:01:08,270 INFO [root] [basetoolclass.py(Wait_element] [line:20] - 寻找等待定位元素('xpath', '//*[@class="el-radio__inner"][1]')

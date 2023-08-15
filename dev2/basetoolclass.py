@@ -97,16 +97,14 @@ class Base_geturl:
         self.driver.execute_script('arguments[0].style.visibility="visible"', el)
         el.send_keys(file)
     def pywinautos(self,button1,button2,file):
-       try:
         self.click(button1)
         self.click(button2)
         app = Desktop()
         dialog = app['打开']  # 根据名字找到弹出窗口
-        dialog["Edit"].type_keys(r'{}'.format(file))  # 在输入框中输入值
+        dialog["Edit"].type_keys(file)  # 在输入框中输入值
         time.sleep(2)
-        dialog["打开()"].double_click()
+        dialog["打开(O)"].double_click()
         print("调用上传文件方法成功，上传附件成功")
-        return True
-       except:
-            print("上传附件失败")
-            return False
+
+
+
