@@ -1,3 +1,4 @@
+import time
 from datetime import datetime
 from selenium.webdriver.common.action_chains import ActionChains
 from ..basetoolclass import Base_geturl
@@ -26,8 +27,9 @@ class Creat_cb(Base_geturl):
         click_file_button=(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div/di'
                                     'v/div[1]/div[1]/form/div[7]/div/div/div/div/div/div/button')
         click_file_button2=(By.XPATH,'//*[text()="选择附件"]')
-        click_file_button3=(By.S,"body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small")
-        click_file_button4=(By.XPATH,'/html/body/div[3]/div/div[3]/span/button[2]/span')
+        click_file_button3=(By.CSS_SELECTOR,"body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small")
+        click_file_button4=(By.CSS_SELECTOR,'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+        asert_input_file=(By.XPATH,"//*[text()='删除']")
         def click_cost_list(self):
             """进入成本合同列表"""
             self.no_selcet(self.tes,self.cost_text)
@@ -44,9 +46,16 @@ class Creat_cb(Base_geturl):
             self.Login_fram_DEV()
             self.input_account(self.usernames,self.pasward)#输入用户名密码
         def inputfile(self):
-            # self.click(self.click_file_button)
-            # self.click(self.click_file_button2)
-            self.pywinautos(self.click_file_button,self.click_file_button2,self.click_file_button3,self.click_file_button4,self.Attachments)
+            self.login_in()
+            self.click_cost_list()
+            self.click(self.new_cost)
+            self.pywinautos(self.click_file_button,self.click_file_button2,self.Attachments)
+            time.sleep(0.2)
+            self.click(self.click_file_button3)
+            a=self.ele_dispaly(self.asert_input_file)
+            time.sleep(1)
+            self.click(self.click_file_button4)
+            return a
         def creat_cost(self):
             self.login_in()
             self.click_cost_list()
@@ -56,9 +65,6 @@ class Creat_cb(Base_geturl):
             self.send_keys(self.selece_date2, self.formatted_date)
             self.click(self.click_body)
             self.inputfile()
-            # self.send_keys(self.input_code,value="{}".format(self.formatted_date))
-            # self.input_Attachments(self.update_Attachments)
-
 
 
 

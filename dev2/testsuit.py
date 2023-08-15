@@ -25,10 +25,11 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         self.driver.quit()
         print("用例运行结束")
     def test_01(self):
-        self.creat_cost()
-    # @file_data('./config/config.yaml')
-    # def test_02(self,usernames,pasward):
-    #     self.assertTrue(self.login_case(usernames,pasward), True)
+        """上传文件用例"""
+        self.assertTrue(self.inputfile(),True)
+    @file_data('./config/config.yaml')
+    def test_02(self,usernames,pasward):
+        self.assertTrue(self.login_case(usernames,pasward), True)
 if __name__ == '__main__':
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     current_dir = os.path.dirname(os.path.abspath(__file__))

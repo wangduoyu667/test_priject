@@ -104,13 +104,11 @@ class Base_geturl:
         el = self.Wait_element(loc)
         self.driver.execute_script('arguments[0].style.visibility="visible"', el)
         el.send_keys(file)
-    def pywinautos(self,button1,button2,button3,button4,file):
+    def pywinautos(self,button1,button2,file):
         self.click(button1)
         self.click(button2)
         app = Desktop()
         dialog = app['打开']  # 根据名字找到弹出窗口
         dialog["Edit"].type_keys(r'{}'.format(file))  # 在输入框中输入值
-        dialog["打开"].click()
-        time.sleep(1)
-        self.click(button3)
-        self.click(button4)
+        time.sleep(2)
+        dialog["打开"].double_click()
