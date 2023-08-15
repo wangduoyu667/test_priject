@@ -45,17 +45,30 @@ class Creat_cb(Base_geturl):
             self.max_windos()#最大化窗口
             self.Login_fram_DEV()
             self.input_account(self.usernames,self.pasward)#输入用户名密码
-        def inputfile(self):
-            self.login_in()
             self.click_cost_list()
             self.click(self.new_cost)
+        def inputfile(self):
+            """附件上传用例"""
+            self.login_in()
             self.pywinautos(self.click_file_button,self.click_file_button2,self.Attachments)
             time.sleep(0.2)
             self.click(self.click_file_button3)
-            a=self.ele_dispaly(self.asert_input_file)
+            a=self.ele_dispaly(self.asert_input_file)#获取删除按钮是否存在
             time.sleep(1)
             self.click(self.click_file_button4)
             return a
+        def inputfile_delete(self):
+            """附件删除用例"""
+            delete_logo=(By.XPATH,"//*[text()='删除成功']")
+            delete_button=(By.XPATH,"//*[text()='删除']")
+            delete_enter=(By.CSS_SELECTOR,'body > div.el-message-box__wrapper > div > div.el-message-box__btns > button.el-button.el-button--default.el-button--small.el-button--primary > span')
+            self.login_in()
+            self.pywinautos(self.click_file_button,self.click_file_button2,self.Attachments)#上传附件
+            time.sleep(0.2)
+            self.click(self.click_file_button3)#点击上传按钮
+            self.click(delete_button)
+            self.click(delete_enter)#确认删除
+            return self.ele_dispaly(delete_logo)
         def creat_cost(self):
             self.login_in()
             self.click_cost_list()

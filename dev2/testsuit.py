@@ -21,14 +21,18 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         print("打开浏览器")
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
-        time.sleep(3)
+        time.sleep(0.1)
         self.driver.quit()
         print("用例运行结束")
     def test_01(self):
-        """上传文件用例"""
+        """上传文件"""
         self.assertTrue(self.inputfile(),True)
+    def test_02(self):
+        """上传文件-删除"""
+        self.assertTrue(self.inputfile_delete(),True)
     @file_data('./config/config.yaml')
-    def test_02(self,usernames,pasward):
+    def test_03(self,usernames,pasward):
+        """登录测试"""
         self.assertTrue(self.login_case(usernames,pasward), True)
 if __name__ == '__main__':
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
