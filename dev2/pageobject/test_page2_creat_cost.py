@@ -28,6 +28,9 @@ class Creat_cb(Base_geturl):
         click_file_button3=(By.CSS_SELECTOR,"body > div.el-dialog__wrapper > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small")
         click_file_button4=(By.CSS_SELECTOR,'body > div.el-dialog__wrapper > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
         asert_input_file=(By.XPATH,"//*[text()='删除']")
+        dele_ele_offs=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div:nth-child(2) > div.page-table.flex-col.flex1 > div > div > div.el-table__fixed-right > div.el-table__fixed-body-wrapper > table > tbody > tr:nth-child(1) > td.el-table_2_column_20.is-center.el-table__cell > div > div > div')
+        save_button=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div:nth-child(3) > div > button.el-button.el-button--primary.el-button--small > span')
+        assert_ele=(By.XPATH,"//*[text()='保存成功']")
         def click_cost_list(self):
             """进入成本合同列表"""
             self.no_selcet(self.tes,self.cost_text)
@@ -106,6 +109,7 @@ class Creat_cb(Base_geturl):
             a=self.ele_dispaly(self.asert_input_file)#获取删除按钮是否存在
             time.sleep(1)
             self.click(click_file_button4)
+            self.screenshort()
             return a
         def inputfile_delete(self):
             """附件删除用例"""
@@ -118,10 +122,22 @@ class Creat_cb(Base_geturl):
             self.click(self.click_file_button3)#点击上传按钮
             self.click(delete_button)
             self.click(delete_enter)#确认删除
+            self.screenshort()
             return self.ele_dispaly(delete_logo)
+        def select_poject(self):
+            """选择项目"""
+            city_button=(By.XPATH,'//*[@placeholder="请选择中心城市"]')
+            city=(By.XPATH,"//*[text()='长沙-中心城市公司']")
+            centen_button=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div:nth-child(2) > form > div:nth-child(1) > div:nth-child(2) > div > div > div > div.el-select__tags')
+            centen = (By.XPATH, "//*[text()='C03管理中心']")
+            poject_button=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div:nth-child(2) > form > div:nth-child(1) > div:nth-child(4) > div > div > div > div.el-select__tags > input')
+            poject = (By.XPATH, "//*[text()='（金茂服务_北京-中心城市公司_J03管理中心_中化社区）']")
+            self.no_selcet(city_button,city)
+            self.no_selcet(centen_button,centen)
+            self.no_selcet(poject_button,poject)
+            self.click2(self.save_button)
         def creat_cost(self):
             """创建合同"""
-            self.login_in()
             self.inputfile()#进入tab上传定标附件
             self.delay_time()
             self.inputfile_contract()
@@ -129,7 +145,9 @@ class Creat_cb(Base_geturl):
             self.creat_Subject()
             self.creat_Subject2()
             self.delay_time()
-            self.click_locxy(1190, 190)#拉动组件滚动条至底部
+            self.click_locxys(self.dele_ele_offs,78, 1)#拉动组件滚动条至底部
+            self.select_poject()
+            return self.Wait_element(self.assert_ele)
 
 
 

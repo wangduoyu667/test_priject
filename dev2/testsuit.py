@@ -24,35 +24,35 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         print("打开浏览器")
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
-        time.sleep(10)
+        #time.sleep(1111)
         self.driver.implicitly_wait(0.5)
         self.driver.quit()
         print("用例运行结束")
-    # def test_01(self):
-    #     """上传文件"""
-    #     self.assertTrue(self.inputfile(),True)
-    # def test_02(self):
-    #     """上传文件-删除"""
-    #     self.assertTrue(self.inputfile_delete(),True)
-    # @file_data('./config/config.yaml')
-    # def test_03(self,usernames,pasward):
-    #     """登录测试"""
-    #     self.assertTrue(self.login_case(usernames,pasward), True)
-    # def test_04(self):
-    #     """上传附件合同用例"""
-    #     self.login_in()
-    #     self.assertTrue(self.inputfile_contract())
-    # def test_05(self):
-    #     """创建入驻合同"""
+    def test_01(self):
+        """上传文件"""
+        self.assertTrue(self.inputfile(),True)
+    def test_02(self):
+        """上传文件-删除"""
+        self.assertTrue(self.inputfile_delete(),True)
+    @file_data('./config/config.yaml')
+    def test_03(self,usernames,pasward):
+        """登录测试"""
+        self.assertTrue(self.login_case(usernames,pasward), True)
+    def test_04(self):
+        """上传附件合同用例"""
+        self.login_in()
+        self.assertTrue(self.inputfile_contract())
+    def test_05(self):
+        """创建入驻合同"""
+        self.assertTrue(self.creat_cost())
+    # def test_06(self):
+    #     """测试方法"""
     #     self.creat_cost()
-    def test_06(self):
-        """测试方法"""
-        self.creat_cost()
 if __name__ == '__main__':
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
     current_dir = os.path.dirname(os.path.abspath(__file__))
     report_path = os.path.join(current_dir, "report", "report2" + now + ".html")
     discover=unittest.defaultTestLoader.discover(current_dir,"testsuit.py")#加载所有.py的文件用例
     with open(report_path, "wb") as report_file:
-        runner = HTMLTestRunner(stream=report_file, title="Test Report", description="Test Results")
+        runner = HTMLTestRunner(stream=report_file, title="Test Report",verbosity=2, description="Test Results")
         runner.run(discover)
