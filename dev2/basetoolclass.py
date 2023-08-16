@@ -2,6 +2,8 @@
 import time
 import logging
 import logging.handlers
+from datetime import datetime
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as Ec
 from selenium.webdriver.support.select import Select #下拉框
@@ -26,7 +28,8 @@ class Base_geturl:
             self.info_log(msg="获取断言元素{}".format(loc))
             return True
         except:
-            self.screenshort()
+            self.getImage()
+            #self.screenshort()
             print("未找到元素{}".format(loc))
             return False
     def send_keys(self,loc,value=None):#等待元素并输入
@@ -34,6 +37,7 @@ class Base_geturl:
     def click(self,loc):
         self.Wait_element(loc).click()
     def click2(self,loc):
+        """等待出现，解决元素被遮挡"""
         a=ActionChains(self.driver)
         element = self.Wait_element(loc)
         a.move_to_element(element).perform()
@@ -50,12 +54,9 @@ class Base_geturl:
         select_eles.select_by_index(index)#通过索引选择下拉元素
     def no_selcet(self,loc,loc2):#非下拉框方法
          self.click2(loc)
+         self.delay_time()
          self.click2(loc2)
          return print("获取下拉框元素")
-    def input_file(self,loc,filepath):#传输上传附件inupt  XPTH
-        print("上传附件{}中".format(filepath))
-        self.find_element(loc).sendkeys(filepath)
-        return print("上传{}完毕".format(filepath))
     # 截图
     def screenshort(self):
         '''
@@ -122,24 +123,41 @@ class Base_geturl:
         app = Desktop()
         dialog = app['打开']  # 根据名字找到弹出窗口
         dialog["Edit"].type_keys(file)  # 在输入框中输入值
-        time.sleep(2)
+        self.delay_time()
         dialog["打开(O)"].double_click()
         print("调用上传文件方法成功，上传附件成功")
-    def click_locxy(self, x, y, left_click=True):
-        '''
-        dr:浏览器
-        x:页面x坐标
-        y:页面y坐标
-        left_click:True为鼠标左键点击，否则为右键点击
-        '''
-        ActionChains(self.driver).move_by_offset(0, 0).perform()  # 将鼠标位置恢复到移动前
-        if left_click:
-            ActionChains(self.driver).move_by_offset(x, y).click().perform()
-        else:
-            ActionChains(self.driver).move_by_offset(x, y).context_click().perform()
-
     def delay_time(self,times=0.2):
         self.driver.implicitly_wait(times)
+
+    def click_locxys(self, element, x, y, left_click=True):
+        '''
+        element: 定位到的元素
+        x: 相对于元素的x坐标
+        y: 相对于元素的y坐标
+        left_click: True为鼠标左键点击，否则为右键点击
+        '''
+        ActionChains(self.driver).move_to_element(self.Wait_element(element)).perform()  # 将鼠标移动到指定元素的位置
+        if left_click:
+            ActionChains(self.driver).move_by_offset(x, y).double_click().perform()
+            self.screenshort()# 移动鼠标相对坐标并进行左键点击操作
+        else:
+            ActionChains(self.driver).move_by_offset(x, y).context_click().perform()
+            self.screenshort()# 移动鼠标相对坐标并进行右键点击操作
+    def getImage(self):
+        '''
+        截取图片,并保存在images文件夹
+        :return: 无
+        '''
+        path=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
+        # 生成时间戳
+        timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
+        # 拼接文件路径
+        imgPath = os.path.join(path, '%s.png' % str(timestrmap))
+        # 使用WebDriver的save_screenshot方法截取屏幕截图并保存
+        self.driver.save_screenshot(imgPath)
+        # 打印截图文件名
+        print('screenshot:', timestrmap, '.png')
+
 
 
 
