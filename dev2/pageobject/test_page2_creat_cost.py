@@ -58,8 +58,41 @@ class Creat_cb(Base_geturl):
             self.click(self.click_body)
             """输入合同类型"""
             self.click(self.template_type)
+        def creat_Subject(self):
+            """创建我方合同主体"""
+            button=(By.XPATH,'//*[text()="+添加合同主体"]')
+            select_Subject=(By.XPATH,'//*[@placeholder="请选择主体类型"]')
+            Subject_me=(By.XPATH,'//*[text()="我方公司"]')
+            click_company=(By.XPATH,'//*[@placeholder="请选择公司名称"]')
+            select_company=(By.XPATH,'//*[text()="北京物业长沙分公司"]')
+            body=(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/section')
+            determine=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div.el-drawer__wrapper > div > div > section > div > div.footer-btn > button.el-button.el-button--primary.el-button--small > span')
+            self.click(button)
+            self.click(select_Subject)
+            self.click(Subject_me)
+            self.click(click_company)
+            self.click(select_company)
+            self.click(body)
+            self.click(determine)
+        def creat_Subject2(self):
+            """创建对方合同主体"""
+            button=(By.XPATH,'//*[text()="+添加合同主体"]')
+            select_Subject=(By.XPATH,'//*[@placeholder="请选择主体类型"]')
+            Subject_me=(By.XPATH,'//*[text()="对方公司"]')
+            click_company=(By.XPATH,'//*[@placeholder="请选择公司名称"]')
+            select_company=(By.XPATH,'//*[text()="长沙数据统计"]')
+            body = (By.XPATH, '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/section')
+            determine=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div.el-drawer__wrapper > div > div > section > div > div.footer-btn > button.el-button.el-button--primary.el-button--small > span')
+            self.click(button)
+            self.click(select_Subject)
+            self.click(Subject_me)
+            self.click(click_company)
+            self.click(select_company)
+            time.sleep(0.1)
+            self.click(body)
+            self.click(determine)
         def inputfile(self):
-            """附件上传用例"""
+            """定标附件上传用例"""
             # current_dir = os.path.dirname(os.path.abspath(__file__))
             # # 构建相对路径
             # file_path = os.path.join(current_dir, 'config', 'cs.doc')
@@ -70,6 +103,19 @@ class Creat_cb(Base_geturl):
             a=self.ele_dispaly(self.asert_input_file)#获取删除按钮是否存在
             time.sleep(1)
             self.click(self.click_file_button4)
+            return a
+        def inputfile_contract(self):
+            """合同附件上传用例"""
+            click_file_button=(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[8]/div/div/div/div/div/div/button/span')
+            click_file_button2=(By.CSS_SELECTOR,'body > div:nth-child(7) > div > div.el-dialog__body > div > form > div > div:nth-child(1) > div > div > div > div > button > span')
+            click_file_button3=(By.CSS_SELECTOR,'body > div:nth-child(7) > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small > span')
+            click_file_button4=(By.CSS_SELECTOR,'body > div:nth-child(7) > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
+            self.pywinautos(click_file_button,click_file_button2,self.Attachments)
+            time.sleep(0.2)
+            self.click(click_file_button3)
+            a=self.ele_dispaly(self.asert_input_file)#获取删除按钮是否存在
+            time.sleep(1)
+            self.click(click_file_button4)
             return a
         def inputfile_delete(self):
             """附件删除用例"""
@@ -85,9 +131,13 @@ class Creat_cb(Base_geturl):
             return self.ele_dispaly(delete_logo)
         def creat_cost(self):
             """创建合同"""
-            self.inputfile()
-            self.base_config()
-
+            self.inputfile()#进入tab上传定标附件
+            time.sleep(1)
+            self.inputfile_contract()
+            self.base_config()  # 输入基本参数
+            self.creat_Subject()
+            self.creat_Subject2()
+            self.click_locxy(10,10)
 
 
 

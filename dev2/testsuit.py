@@ -8,7 +8,7 @@ from basetoolclass import Base_geturl
 from dev2.pageobject.test_page1_login import Login
 from dev2.pageobject.test_page2_creat_cost import Creat_cb
 from dev2.report.HTMLTestRunner import HTMLTestRunner
-from ddt import file_data , ddt
+from ddt import file_data,ddt
 @ddt
 class Test_suit(unittest.TestCase,Login,Creat_cb):
     def setUp(self) -> None:
@@ -24,21 +24,28 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         print("打开浏览器")
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
-        time.sleep(0.1)
+        time.sleep(1)
         self.driver.quit()
         print("用例运行结束")
-    def test_01(self):
-        """上传文件"""
-        self.assertTrue(self.inputfile(),True)
-    def test_02(self):
-        """上传文件-删除"""
-        self.assertTrue(self.inputfile_delete(),True)
-    @file_data('./config/config.yaml')
-    def test_03(self,usernames,pasward):
-        """登录测试"""
-        self.assertTrue(self.login_case(usernames,pasward), True)
-    def test_04(self):
-        """创建入驻合同"""
+    # def test_01(self):
+    #     """上传文件"""
+    #     self.assertTrue(self.inputfile(),True)
+    # def test_02(self):
+    #     """上传文件-删除"""
+    #     self.assertTrue(self.inputfile_delete(),True)
+    # @file_data('./config/config.yaml')
+    # def test_03(self,usernames,pasward):
+    #     """登录测试"""
+    #     self.assertTrue(self.login_case(usernames,pasward), True)
+    # def test_04(self):
+    #     """上传附件合同用例"""
+    #     self.login_in()
+    #     self.assertTrue(self.inputfile_contract())
+    # def test_05(self):
+    #     """创建入驻合同"""
+    #     self.creat_cost()
+    def test_06(self):
+        """测试方法"""
         self.creat_cost()
 if __name__ == '__main__':
     now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")

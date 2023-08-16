@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as Ec
 from selenium.webdriver.support.select import Select #下拉框
 import os
 from pywinauto import Desktop
+from selenium.webdriver.common.action_chains import ActionChains
 class Base_geturl:
     loggers = None
     def __init__(self,driver):
@@ -107,6 +108,13 @@ class Base_geturl:
         self.driver.execute_script('arguments[0].style.visibility="visible"', el)
         el.send_keys(file)
     def pywinautos(self,button1,button2,file):
+        '''
+
+        :param button1: 上传附件外部按钮
+        :param button2: 上传附件组件内部按钮
+        :param file:    上传附件地址
+        :return:
+        '''
         self.click(button1)
         self.click(button2)
         app = Desktop()
@@ -115,6 +123,20 @@ class Base_geturl:
         time.sleep(2)
         dialog["打开(O)"].double_click()
         print("调用上传文件方法成功，上传附件成功")
+    def click_locxy(self, x, y, left_click=True):
+        '''
+        dr:浏览器
+        x:页面x坐标
+        y:页面y坐标
+        left_click:True为鼠标左键点击，否则为右键点击
+        '''
+        if left_click:
+            ActionChains(self.driver).move_by_offset(x, y).click().perform()
+        else:
+            ActionChains(self.driver).move_by_offset(x, y).context_click().perform()
+        ActionChains(self.driver).move_by_offset(-x, -y).perform()  # 将鼠标位置恢复到移动前
+
+
 
 
 
