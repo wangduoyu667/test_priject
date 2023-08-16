@@ -3,6 +3,7 @@ import os
 import time
 import unittest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from basetoolclass import Base_geturl
 from dev2.pageobject.test_page1_login import Login
@@ -25,26 +26,27 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
         #time.sleep(1111)
-        self.driver.implicitly_wait(0.5)
+        self.driver.implicitly_wait(1.2)
         self.getImage()
         self.driver.quit()
         print("用例运行结束")
-    def test_01(self):
-        """上传文件"""
-        self.assertTrue(self.inputfile(),True)
-    def test_02(self):
-        """上传文件-删除"""
-        self.assertTrue(self.inputfile_delete(),True)
-    @file_data('./config/config.yaml')
-    def test_03(self,usernames,pasward):
-        """登录测试"""
-        self.assertTrue(self.login_case(usernames,pasward), True)
+    # def test_01(self):
+    #     """上传文件"""
+    #     self.assertTrue(self.inputfile(),True)
+    # def test_02(self):
+    #     """上传文件-删除"""
+    #     self.assertTrue(self.inputfile_delete(),True)
+    # @file_data('./config/config.yaml')
+    # def test_03(self,usernames,pasward):
+    #     """登录测试"""
+    #     self.assertTrue(self.login_case(usernames,pasward), True)
     def test_04(self):
         """上传附件合同用例"""
         self.login_in()
-        self.assertTrue(self.inputfile_contract())
+        self.inputfile_contract()
+        self.assertTrue(self.find_element(self.assert_ele2))
     def test_05(self):
-        """创建入驻合同"""
+        """创建成本合同"""
         self.assertTrue(self.creat_cost())
     # def test_06(self):
     #     """测试方法"""

@@ -30,6 +30,7 @@ class Creat_cb(Base_geturl):
         asert_input_file=(By.XPATH,"//*[text()='删除']")
         dele_ele_offs=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div:nth-child(2) > div.page-table.flex-col.flex1 > div > div > div.el-table__fixed-right > div.el-table__fixed-body-wrapper > table > tbody > tr:nth-child(1) > td.el-table_2_column_20.is-center.el-table__cell > div > div > div')
         save_button=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div:nth-child(3) > div > button.el-button.el-button--primary.el-button--small > span')
+        assert_ele2 = (By.XPATH, "//*[text()='上传成功']")
         assert_ele=(By.XPATH,"//*[text()='保存成功']")
         def click_cost_list(self):
             """进入成本合同列表"""
@@ -99,19 +100,33 @@ class Creat_cb(Base_geturl):
             return a
         def inputfile_contract(self):
             """合同附件上传用例"""
-            click_file_button=(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[1]/div[1]/form/div[8]/div/div/div/div/div/div/button/span')
-            click_file_button2=(By.CSS_SELECTOR,'body > div:nth-child(7) > div > div.el-dialog__body > div > form > div > div:nth-child(1) > div > div > div > div > button > span')
-            click_file_button3=(By.CSS_SELECTOR,'body > div:nth-child(7) > div > div.el-dialog__body > div > form > div > div.button-view.el-col.el-col-24 > div > div > div > button.el-button.el-button--primary.el-button--small > span')
-            click_file_button4=(By.CSS_SELECTOR,'body > div:nth-child(7) > div > div.el-dialog__footer > span > button.el-button.el-button--primary.el-button--small > span')
-            self.pywinautos(click_file_button,click_file_button2,self.Attachments)
-            time.sleep(0.2)
-            self.click(click_file_button3)
-            a=self.ele_dispaly(self.asert_input_file)#获取删除按钮是否存在
-            time.sleep(1)
-            self.click(click_file_button4)
+            #click_file_button_if = (By.XPATH,"((//*[text()='上传附件']))[2]")
+            click_file_button=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div:nth-child(1) > div.g-search-box-coby > form > div:nth-child(8) > div > div > div > div > div > div > button > span')
+            flage=(By.XPATH,"//*[text()='查看附件']")
+            click_file_button2 = (By.XPATH, "(//*[text()='选择附件'])")#上传定标附件前
+            click_file_button2_if=(By.XPATH,'(//*[@class="el-button upload-button el-button--primary el-button--small"])[2]')#上传定标附件后的
+            click_file_button3 = (By.XPATH, "(//*[text()='上传'])")#上传定标附件前
+            click_file_button3_if=(By.XPATH,"(//*[text()='上传'])[2]")#上传定标附件后的
+            click_file_button4 = (By.XPATH, "//*[text()='确定']")  # 上传定标附件前
+            click_file_button4_if=(By.XPATH,"(//*[text()='确定'])[2]")#上传定标附件后的
+            try:
+                self.Wait_element(flage)
+                self.pywinautos(click_file_button, click_file_button2_if, self.Attachments)
+            except:
+                self.pywinautos(click_file_button, click_file_button2, self.Attachments)
+            time.sleep(0.5)
+            try:
+                self.click(click_file_button3)
+            except:#元素xpath位置变了
+                self.click2(click_file_button3_if)
+            self.delay_time()
+            try:
+                self.click(click_file_button4)
+            except:
+                self.click(click_file_button4_if)
             self.screenshort()
             self.getImage()
-            return a
+
         def inputfile_delete(self):
             """附件删除用例"""
             delete_logo=(By.XPATH,"//*[text()='删除成功']")
@@ -141,16 +156,18 @@ class Creat_cb(Base_geturl):
         def creat_cost(self):
             """创建合同"""
             self.inputfile()#进入tab上传定标附件
-            self.delay_time()
+            time.sleep(0.5)
             self.inputfile_contract()
+            self.delay_time()
             self.base_config()  # 输入基本参数
             self.creat_Subject()
             self.creat_Subject2()
-            self.delay_time()
-            self.click_locxys(self.dele_ele_offs,78, 1)#拉动组件滚动条至底部
+            time.sleep(1)
+            self.click_locxys(self.dele_ele_offs,78, 1,left_click=True)#拉动组件滚动条至底部
             self.select_poject()
             self.getImage()
-            return self.Wait_element(self.assert_ele)
+            self.delay_time()
+            return self.ele_dispaly(self.assert_ele)
 
 
 

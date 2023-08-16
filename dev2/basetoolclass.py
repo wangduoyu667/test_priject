@@ -110,7 +110,25 @@ class Base_geturl:
         el = self.Wait_element(loc)
         self.driver.execute_script('arguments[0].style.visibility="visible"', el)
         el.send_keys(file)
-    def pywinautos(self,button1,button2,file):
+    # def pywinautos(self,button1,button2,file):
+    #     '''
+    #
+    #     :param button1: 上传附件外部按钮
+    #     :param button2: 上传附件组件内部按钮
+    #     :param file:    上传附件地址
+    #     :return:
+    #     '''
+    #     self.click(button1)
+    #     time.sleep(1)
+    #     self.click(button2)
+    #     app = Desktop()
+    #     dialog = app['打开']  # 根据名字找到弹出窗口
+    #     dialog["Edit"].type_keys(file)  # 在输入框中输入值
+    #     self.delay_time(5)
+    #     dialog["打开(O)"].double_click()
+    #     print("调用上传文件方法成功，上传附件成功")
+
+    def pywinautos(self, button1, button2,file):
         '''
 
         :param button1: 上传附件外部按钮
@@ -119,17 +137,18 @@ class Base_geturl:
         :return:
         '''
         self.click(button1)
+        time.sleep(1)
         self.click(button2)
         app = Desktop()
         dialog = app['打开']  # 根据名字找到弹出窗口
         dialog["Edit"].type_keys(file)  # 在输入框中输入值
-        self.delay_time()
-        dialog["打开(O)"].double_click()
+        self.delay_time(5)
+        dialog["Edit"].type_keys("{ENTER}")  # 模拟按下Enter键
         print("调用上传文件方法成功，上传附件成功")
     def delay_time(self,times=0.2):
         self.driver.implicitly_wait(times)
 
-    def click_locxys(self, element, x, y, left_click=True):
+    def click_locxys(self, element, x, y, left_click=False):
         '''
         element: 定位到的元素
         x: 相对于元素的x坐标
@@ -148,6 +167,7 @@ class Base_geturl:
         截取图片,并保存在images文件夹
         :return: 无
         '''
+        self.delay_time()
         path=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
         # 生成时间戳
         timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
