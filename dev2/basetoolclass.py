@@ -33,22 +33,24 @@ class Base_geturl:
         self.Wait_element(loc).send_keys(value)
     def click(self,loc):
         self.Wait_element(loc).click()
+    def click2(self,loc):
+        a=ActionChains(self.driver)
+        element = self.Wait_element(loc)
+        a.move_to_element(element).perform()
+        element.click()
+        #self.Wait_element(loc).click()
     def switch_window(self):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[-1])
     def max_windos(self):
         self.driver.maximize_window()
-    def tishi(self,loc):
-        if self.Wait_element(loc).text:
-            return self.Wait_element(loc).text
     def selcet(self,loc,index=0):#下拉框方法
         value=self.find_element(loc)
         select_eles=Select(value)
         select_eles.select_by_index(index)#通过索引选择下拉元素
     def no_selcet(self,loc,loc2):#非下拉框方法
-         self.click(loc)
-         time.sleep(0.2)
-         self.click(loc2)
+         self.click2(loc)
+         self.click2(loc2)
          return print("获取下拉框元素")
     def input_file(self,loc,filepath):#传输上传附件inupt  XPTH
         print("上传附件{}中".format(filepath))
@@ -130,11 +132,14 @@ class Base_geturl:
         y:页面y坐标
         left_click:True为鼠标左键点击，否则为右键点击
         '''
+        ActionChains(self.driver).move_by_offset(0, 0).perform()  # 将鼠标位置恢复到移动前
         if left_click:
             ActionChains(self.driver).move_by_offset(x, y).click().perform()
         else:
             ActionChains(self.driver).move_by_offset(x, y).context_click().perform()
-        ActionChains(self.driver).move_by_offset(-x, -y).perform()  # 将鼠标位置恢复到移动前
+
+    def delay_time(self,times=0.2):
+        self.driver.implicitly_wait(times)
 
 
 

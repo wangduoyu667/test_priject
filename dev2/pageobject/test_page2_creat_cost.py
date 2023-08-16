@@ -1,10 +1,7 @@
 from datetime import datetime
-import os
 import time
-from selenium.webdriver.common.action_chains import ActionChains
 from ..basetoolclass import Base_geturl
 from selenium.webdriver.common.by import By
-import unittest
 class Creat_cb(Base_geturl):
         current_date = datetime.now().date()
         formatted_date = current_date.strftime("%Y-%m-%d")
@@ -17,7 +14,6 @@ class Creat_cb(Base_geturl):
         cost_text=(By.XPATH,'//*[text()="成本合同管理"]')#成本合同
         tes=(By.XPATH,'//*[@id="app"]/div/div/div[1]/div/div/div/ul/div[8]/li/div/i[2]')#成本合同下拉框
         new_cost=(By.XPATH,"//*[text()='创建供方采购合同']")#创建供方采购合同按钮
-
         contract_name=(By.XPATH,'//*[@placeholder="请输入合同名称"]')#采购合同脚本测试
         selece_date=(By.XPATH,'//*[@placeholder="选择开始日期"]')
         selece_date2 = (By.XPATH, '//*[@placeholder="选择结束日期"]')
@@ -65,32 +61,26 @@ class Creat_cb(Base_geturl):
             Subject_me=(By.XPATH,'//*[text()="我方公司"]')
             click_company=(By.XPATH,'//*[@placeholder="请选择公司名称"]')
             select_company=(By.XPATH,'//*[text()="北京物业长沙分公司"]')
-            body=(By.XPATH,'//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/section')
             determine=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div.el-drawer__wrapper > div > div > section > div > div.footer-btn > button.el-button.el-button--primary.el-button--small > span')
-            self.click(button)
-            self.click(select_Subject)
-            self.click(Subject_me)
-            self.click(click_company)
-            self.click(select_company)
-            self.click(body)
-            self.click(determine)
+            self.no_selcet(button,select_Subject)
+            self.no_selcet(Subject_me, click_company)
+            self.no_selcet(select_company, determine)
+            # self.click2(select_company)
+            #
+            # self.click2(determine)
         def creat_Subject2(self):
             """创建对方合同主体"""
             button=(By.XPATH,'//*[text()="+添加合同主体"]')
             select_Subject=(By.XPATH,'//*[@placeholder="请选择主体类型"]')
             Subject_me=(By.XPATH,'//*[text()="对方公司"]')
             click_company=(By.XPATH,'//*[@placeholder="请选择公司名称"]')
-            select_company=(By.XPATH,'//*[text()="长沙数据统计"]')
-            body = (By.XPATH, '//*[@id="app"]/div/div/div[2]/div[2]/div/div/div[2]/div/div/section')
+            select_company=(By.XPATH,"//*[text()='长沙数据统计']")
             determine=(By.CSS_SELECTOR,'#app > div > div > div.main-page-body.flex-col.flex1.of-h > div.main-page-content.flex-row.flex1 > div > div > div.el-drawer__wrapper > div > div > section > div > div.footer-btn > button.el-button.el-button--primary.el-button--small > span')
-            self.click(button)
-            self.click(select_Subject)
-            self.click(Subject_me)
-            self.click(click_company)
-            self.click(select_company)
-            time.sleep(0.1)
-            self.click(body)
-            self.click(determine)
+            self.no_selcet(button, select_Subject)
+            self.no_selcet(Subject_me, click_company)
+            self.no_selcet(select_company, determine)
+            # self.click2(select_company)
+            # self.click2(determine)
         def inputfile(self):
             """定标附件上传用例"""
             # current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -131,13 +121,15 @@ class Creat_cb(Base_geturl):
             return self.ele_dispaly(delete_logo)
         def creat_cost(self):
             """创建合同"""
+            self.login_in()
             self.inputfile()#进入tab上传定标附件
-            time.sleep(1)
+            self.delay_time()
             self.inputfile_contract()
             self.base_config()  # 输入基本参数
             self.creat_Subject()
             self.creat_Subject2()
-            self.click_locxy(10,10)
+            self.delay_time()
+            self.click_locxy(1190, 190)#拉动组件滚动条至底部
 
 
 

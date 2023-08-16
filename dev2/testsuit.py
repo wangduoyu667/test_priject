@@ -24,7 +24,8 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         print("打开浏览器")
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
-        time.sleep(1)
+        time.sleep(10)
+        self.driver.implicitly_wait(0.5)
         self.driver.quit()
         print("用例运行结束")
     # def test_01(self):
