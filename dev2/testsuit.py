@@ -30,16 +30,16 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
         self.getImage()
         self.driver.quit()
         print("用例运行结束")
-    # def test_01(self):
-    #     """上传文件"""
-    #     self.assertTrue(self.inputfile(),True)
-    # def test_02(self):
-    #     """上传文件-删除"""
-    #     self.assertTrue(self.inputfile_delete(),True)
-    # @file_data('./config/config.yaml')
-    # def test_03(self,usernames,pasward):
-    #     """登录测试"""
-    #     self.assertTrue(self.login_case(usernames,pasward), True)
+    def test_01(self):
+        """上传文件"""
+        self.assertTrue(self.inputfile(),True)
+    def test_02(self):
+        """上传文件-删除"""
+        self.assertTrue(self.inputfile_delete(),True)
+    @file_data('./config/config.yaml')
+    def test_03(self,usernames,pasward):
+        """登录测试"""
+        self.assertTrue(self.login_case(usernames,pasward), True)
     def test_04(self):
         """上传附件合同用例"""
         self.login_in()
