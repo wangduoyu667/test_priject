@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import datetime
 import os
 import time
@@ -6,12 +7,22 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from basetoolclass import Base_geturl
+from dev2.config.Email import EmailManager
 from dev2.pageobject.test_page1_login import Login
 from dev2.pageobject.test_page2_creat_cost import Creat_cb
 from dev2.report.HTMLTestRunner import HTMLTestRunner
 from ddt import file_data,ddt
 @ddt
-class Test_suit(unittest.TestCase,Login,Creat_cb):
+class Test_suit(unittest.TestCase,Login,Creat_cb,EmailManager):
+    @classmethod
+    def setUpClass(self) -> None:
+        self.a = EmailManager()
+
+    @classmethod
+    def tearDownClass(self) -> None:
+        #self.a=EmailManager()
+        self.a.get_path()
+        #a.send_email()
     def setUp(self) -> None:
         # opt = Options()  # 新建参数对象
         # opt.add_argument("--headless")  # 无头
@@ -33,21 +44,21 @@ class Test_suit(unittest.TestCase,Login,Creat_cb):
     def test_01(self):
         """上传文件"""
         self.assertTrue(self.inputfile(),True)
-    def test_02(self):
-        """上传文件-删除"""
-        self.assertTrue(self.inputfile_delete(),True)
-    @file_data('./config/config.yaml')
-    def test_03(self,usernames,pasward):
-        """登录测试"""
-        self.assertTrue(self.login_case(usernames,pasward), True)
-    def test_04(self):
-        """上传附件合同用例"""
-        self.login_in()
-        self.inputfile_contract()
-        self.assertTrue(self.find_element(self.assert_ele2))
-    def test_05(self):
-        """创建成本合同"""
-        self.assertTrue(self.creat_cost())
+    # def test_02(self):
+    #     """上传文件-删除"""
+    #     self.assertTrue(self.inputfile_delete(),True)
+    # @file_data('./config/config.yaml')
+    # def test_03(self,usernames,pasward):
+    #     """登录测试"""
+    #     self.assertTrue(self.login_case(usernames,pasward), True)
+    # def test_04(self):
+    #     """上传附件合同用例"""
+    #     self.login_in()
+    #     self.inputfile_contract()
+    #     self.assertTrue(self.find_element(self.assert_ele2))
+    # def test_05(self):
+    #     """创建成本合同"""
+    #     self.assertTrue(self.creat_cost())
     # def test_06(self):
     #     """测试方法"""
     #     self.creat_cost()

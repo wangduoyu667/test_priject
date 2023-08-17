@@ -1,8 +1,10 @@
-
+import smtplib
 import time
 import logging
 import logging.handlers
 from datetime import datetime
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as Ec
@@ -16,7 +18,6 @@ class Base_geturl:
         loggers = None
         self.driver=driver
         self.imgPath=r'C:\Users\86151\PycharmProjects\pythonProject10\dev2\test_report'
-
     def find_element(self, loc):  # loc传入元组,原则包含定位类型、定位元素表达式
             return self.driver.find_element(*loc)
     def Wait_element(self,loc):#元素等待，返回元素
@@ -178,7 +179,32 @@ class Base_geturl:
         # 打印截图文件名
         print('screenshot:', timestrmap, '.png')
 
-
+    def send_email(self):
+        # now = time.strftime("%Y-%m-%d %H-%M", time.localtime())
+        #定义SMTP服务器
+        smtpserver = 'smtp.qq.com'
+        #发送邮件的用户名和客户端密码(就是授权密码)
+        username = '1207413125@qq.com'
+        passwd = 'unrxlhmtuehehiab' #授权密码
+        #接收邮件的邮箱
+        receiver = '1207413125@qq.com'
+        #创建邮件对象
+        message = MIMEMultipart('related')
+        #邮件主题
+        subject = '美居系统自动化测试报告'
+        paths=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\.html'
+        fujian = MIMEText(open(paths,'rb').read(),'html','utf-8')
+        #把邮件的信息组装到邮件对象里面
+        message['from']=username
+        message['to']=receiver
+        message['subject']=subject
+        message.attach(fujian)
+        #登录smtp服务器并发送邮件
+        smtp = smtplib.SMTP()
+        smtp.connect(smtpserver)
+        smtp.login(username,passwd)
+        smtp.sendmail(username,receiver,message.as_string())
+        smtp.quit()
 
 
 
