@@ -146,7 +146,8 @@ class Base_geturl:
         self.delay_time(5)
         dialog["Edit"].type_keys("{ENTER}")  # 模拟按下Enter键
         print("调用上传文件方法成功，上传附件成功")
-    def delay_time(self,times=0.2):
+    def delay_time(self,times=0.1):
+        #time.sleep(0.2)
         self.driver.implicitly_wait(times)
 
     def click_locxys(self, element, x, y, left_click=False):
@@ -169,6 +170,7 @@ class Base_geturl:
         :return: 无
         '''
         self.delay_time()
+        #time.sleep(0.5)
         path=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
         # 生成时间戳
         timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
@@ -178,7 +180,7 @@ class Base_geturl:
         self.driver.save_screenshot(imgPath)
         # 打印截图文件名
         print('screenshot:', timestrmap, '.png')
-    #
+
     # def send_email(self):
     #     # now = time.strftime("%Y-%m-%d %H-%M", time.localtime())
     #     #定义SMTP服务器
