@@ -27,27 +27,6 @@ class EmailManager:
                 print('screenshot:', timestrmap, '.png')
                 raise
         return wrapper
-
-    # def capture_screenshot(func):
-    #     def wrapper(*args, **kwargs):
-    #         try:
-    #             return func(*args, **kwargs)
-    #         except Exception as e:
-    #             # 捕获异常并保存错误截图
-    #             path = r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
-    #             # 生成时间戳
-    #             timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
-    #             # 拼接文件路径
-    #             imgPath = os.path.join(path, '%s.png' % str(timestrmap))
-    #             screenshot_path = r"C:\Users\86151\PycharmProjects\test_priject\dev2\screenshot/screenshot.png"
-    #             args[0].driver.save_screenshot(imgPath)
-    #             # 将错误截图编码为Base64字符串
-    #             with open(screenshot_path, "rb") as image_file:
-    #                 encoded_image = base64.b64encode(image_file.read()).decode("utf-8")
-    #             # 将Base64编码的图像字符串存储到全局变量中
-    #             args[0].error_screenshot = encoded_image
-    #             raise
-    #     return wrapper
     def get_latest_html_file(self,configs=True):
         if  configs==True:
             html_files = [file for file in os.listdir(self.directorys) if file.endswith('.html')]
@@ -65,36 +44,6 @@ class EmailManager:
                 print(zip_path)
                 return zip_path
             return None
-    # def send_emails(self, paths):
-    #    try:
-    #     # now = time.strftime("%Y-%m-%d %H-%M", time.localtime())
-    #     # 定义SMTP服务器
-    #     smtpserver = 'smtp.qq.com'
-    #     # 发送邮件的用户名和客户端密码(就是授权密码)
-    #     username = '1207413125@qq.com'
-    #     passwd = 'unrxlhmtuehehiab'  # 授权密码
-    #     # 接收邮件的邮箱
-    #     receiver = '1207413125@qq.com'
-    #     # 创建邮件对象
-    #     message = MIMEMultipart('related')
-    #     # 邮件主题
-    #     subject = '美居系统自动化测试报告'
-    #     with open(paths, 'rb') as file:
-    #         fujian = MIMEApplication(file.read())
-    #         fujian.add_header('Content-Disposition', 'attachment', filename=os.path.basename(paths))
-    #         message.attach(fujian)
-    #     message['from'] = username
-    #     message['to'] = receiver
-    #     message['subject'] = subject
-    #     # 登录smtp服务器并发送邮件
-    #     smtp = smtplib.SMTP()
-    #     smtp.connect(smtpserver)
-    #     smtp.login(username, passwd)
-    #     smtp.sendmail(username, receiver, message.as_string())
-    #     print("发送邮件{}成功".format(receiver))
-    #     smtp.quit()
-    #    except:
-    #        print("发送失败")
     def send_emails(self, paths,emailconfig=True):
         try:
             # 定义SMTP服务器
@@ -114,11 +63,9 @@ class EmailManager:
                     fujian = MIMEApplication(file.read())
                     fujian.add_header('Content-Disposition', 'attachment', filename=os.path.basename(paths))
                     message.attach(fujian)
-
                 message['from'] = username
                 message['to'] = receiver
                 message['subject'] = subject
-
                 # 登录smtp服务器并发送邮件
                 smtp = smtplib.SMTP()
                 smtp.connect(smtpserver)
@@ -130,7 +77,7 @@ class EmailManager:
                 pass
         except:
             print("发送失败")
-    def create_zip_file(self, images_path, zip_path, zip_name):
+    def create_zip_file(self,):
         """
         images_path = 'report/images'
         zip_path = 'archive'
@@ -140,9 +87,11 @@ class EmailManager:
         :param zip_name:
         :return:
         """
+        images_path = 'report/images'
+        zip_name = 'archive.zip'
         current_dir = os.getcwd()
         images_abs_path = os.path.join(current_dir, images_path)
-        zip_file_path = os.path.join(zip_path, zip_name)
+        zip_file_path = os.path.join(current_dir, zip_name)
         print(zip_file_path)
         with zipfile.ZipFile(zip_file_path, 'w') as zip_file:
             # 添加HTML文件到压缩包

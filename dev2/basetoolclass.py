@@ -1,11 +1,6 @@
-import smtplib
 import time
 import logging
 import logging.handlers
-from datetime import datetime
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as Ec
 from selenium.webdriver.support.select import Select #下拉框
@@ -96,39 +91,10 @@ class Base_geturl:
     def info_log(self,msg="运行中"):
         #a=self.getLogger().info(msg)
         return self.getLogger().info(msg)
-    def assert_ele(self,loc):
-        self.info_log(msg="获取断言元素{}".format(loc))
-        if self.find_element(loc):
-            a=True
-            return a
-        else:a=False
-        return a
-    def input_Attachments(self,loc,file):
-        self.send_keys(loc,file)
-    # def input_Attachments(self,loc,file):
-    #     self.send_keys(loc,file)
     def input_files(self,loc,file):
         el = self.Wait_element(loc)
         self.driver.execute_script('arguments[0].style.visibility="visible"', el)
         el.send_keys(file)
-    # def pywinautos(self,button1,button2,file):
-    #     '''
-    #
-    #     :param button1: 上传附件外部按钮
-    #     :param button2: 上传附件组件内部按钮
-    #     :param file:    上传附件地址
-    #     :return:
-    #     '''
-    #     self.click(button1)
-    #     time.sleep(1)
-    #     self.click(button2)
-    #     app = Desktop()
-    #     dialog = app['打开']  # 根据名字找到弹出窗口
-    #     dialog["Edit"].type_keys(file)  # 在输入框中输入值
-    #     self.delay_time(5)
-    #     dialog["打开(O)"].double_click()
-    #     print("调用上传文件方法成功，上传附件成功")
-
     def pywinautos(self, button1, button2,file):
         '''
 
@@ -170,50 +136,6 @@ class Base_geturl:
         :return: 无
         '''
         pass
-    # def getImage(self):
-    #     '''
-    #     截取图片,并保存在images文件夹
-    #     :return: 无
-    #     '''
-    #     self.delay_time()
-    #     #time.sleep(0.5)
-    #     path=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
-    #     # 生成时间戳
-    #     timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
-    #     # 拼接文件路径
-    #     imgPath = os.path.join(path, '%s.png' % str(timestrmap))
-    #     # 使用WebDriver的save_screenshot方法截取屏幕截图并保存
-    #     self.driver.save_screenshot(imgPath)
-    #     # 打印截图文件名
-    #     print('screenshot:', timestrmap, '.png')
-
-    # def send_email(self):
-    #     # now = time.strftime("%Y-%m-%d %H-%M", time.localtime())
-    #     #定义SMTP服务器
-    #     smtpserver = 'smtp.qq.com'
-    #     #发送邮件的用户名和客户端密码(就是授权密码)
-    #     username = '1207413125@qq.com'
-    #     passwd = 'unrxlhmtuehehiab' #授权密码
-    #     #接收邮件的邮箱
-    #     receiver = '1207413125@qq.com'
-    #     #创建邮件对象
-    #     message = MIMEMultipart('related')
-    #     #邮件主题
-    #     subject = '美居系统自动化测试报告'
-    #     paths=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\.html'
-    #     fujian = MIMEText(open(paths,'rb').read(),'html','utf-8')
-    #     #把邮件的信息组装到邮件对象里面
-    #     message['from']=username
-    #     message['to']=receiver
-    #     message['subject']=subject
-    #     message.attach(fujian)
-    #     #登录smtp服务器并发送邮件
-    #     smtp = smtplib.SMTP()
-    #     smtp.connect(smtpserver)
-    #     smtp.login(username,passwd)
-    #     smtp.sendmail(username,receiver,message.as_string())
-    #     smtp.quit()
-    #
 
 
 
