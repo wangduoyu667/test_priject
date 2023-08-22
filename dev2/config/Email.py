@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
-import base64
 import os
 import smtplib
-import datetime
 import time
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from dev2.report.HTMLTestRunner import HTMLTestRunner
 import zipfile
+from dev2.report import HTMLTestRunner
 class EmailManager:
     def __init__(self):
         self.result = HTMLTestRunner.TestResult()
