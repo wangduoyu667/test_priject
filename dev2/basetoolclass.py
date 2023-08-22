@@ -169,17 +169,23 @@ class Base_geturl:
         截取图片,并保存在images文件夹
         :return: 无
         '''
-        self.delay_time()
-        #time.sleep(0.5)
-        path=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
-        # 生成时间戳
-        timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
-        # 拼接文件路径
-        imgPath = os.path.join(path, '%s.png' % str(timestrmap))
-        # 使用WebDriver的save_screenshot方法截取屏幕截图并保存
-        self.driver.save_screenshot(imgPath)
-        # 打印截图文件名
-        print('screenshot:', timestrmap, '.png')
+        pass
+    # def getImage(self):
+    #     '''
+    #     截取图片,并保存在images文件夹
+    #     :return: 无
+    #     '''
+    #     self.delay_time()
+    #     #time.sleep(0.5)
+    #     path=r'C:\Users\86151\PycharmProjects\test_priject\dev2\report\images'
+    #     # 生成时间戳
+    #     timestrmap = time.strftime('%Y%m%d_%H.%M.%S')
+    #     # 拼接文件路径
+    #     imgPath = os.path.join(path, '%s.png' % str(timestrmap))
+    #     # 使用WebDriver的save_screenshot方法截取屏幕截图并保存
+    #     self.driver.save_screenshot(imgPath)
+    #     # 打印截图文件名
+    #     print('screenshot:', timestrmap, '.png')
 
     # def send_email(self):
     #     # now = time.strftime("%Y-%m-%d %H-%M", time.localtime())
