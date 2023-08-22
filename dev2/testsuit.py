@@ -37,31 +37,31 @@ class Test_suit(unittest.TestCase,Login,Creat_cb,EmailManager):
         #self.getImage()
         self.driver.quit()
         print("用例运行结束")
-    # @EmailManager.capture_screenshot
-    # def test_01(self):
-    #     """上传文件"""
-    #     self.assertTrue(self.inputfile())
-    # @EmailManager.capture_screenshot
-    # def test_02(self):
-    #     """上传文件-删除"""
-    #     #self.assertTrue(self.inputfile_delete())
-    #     self.assertFalse(self.inputfile_delete())
+    @EmailManager.capture_screenshot
+    def test_01(self):
+        """上传文件"""
+        self.assertTrue(self.inputfile())
+    @EmailManager.capture_screenshot
+    def test_02(self):
+        """上传文件-删除"""
+        #self.assertTrue(self.inputfile_delete())
+        self.assertFalse(self.inputfile_delete())
     @file_data('./config/config.yaml')
     @EmailManager.capture_screenshot
     def test_03(self,usernames,pasward):
         """登录测试"""
         self.assertTrue(self.login_case(usernames,pasward))
-    # @EmailManager.capture_screenshot
-    # def test_04(self):
-    #     """上传附件合同用例"""
-    #     self.login_in()
-    #     self.inputfile_contract()
-    #     self.assertTrue(self.find_element(self.assert_ele2))
+    @EmailManager.capture_screenshot
+    def test_04(self):
+        """上传附件合同用例"""
+        self.login_in()
+        self.inputfile_contract()
+        self.assertTrue(self.find_element(self.assert_ele2))
 
-    # @EmailManager.capture_screenshot
-    # def test_05(self):
-    #     """创建成本合同"""
-    #     self.assertTrue(self.creat_cost())
+    @EmailManager.capture_screenshot
+    def test_05(self):
+        """创建成本合同"""
+        self.assertTrue(self.creat_cost())
     # def test_06(self):
     #     """测试方法"""
     #     self.creat_cost()
