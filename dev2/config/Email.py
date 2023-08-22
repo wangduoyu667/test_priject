@@ -8,7 +8,6 @@ from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from dev2.report.HTMLTestRunner import HTMLTestRunner
-from Lib import HTMLTestRunner
 import zipfile
 class EmailManager:
     def __init__(self):
