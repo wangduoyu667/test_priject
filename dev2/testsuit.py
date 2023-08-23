@@ -33,7 +33,7 @@ class Test_suit(unittest.TestCase,Login,Creat_cb,EmailManager):
         print("打开浏览器")
         Base_geturl(self.driver)#传递参数给基类
     def tearDown(self) -> None:
-        time.sleep(1111)
+        #time.sleep(1111)
         self.driver.implicitly_wait(1.2)
         #self.getImage()
         self.driver.quit()
