@@ -16,8 +16,11 @@ class Base_geturl:
     def find_element(self, loc):  # loc传入元组,原则包含定位类型、定位元素表达式
             return self.driver.find_element(*loc)
     def Wait_element(self,loc):#元素等待，返回元素
-            self.getLogger().info("寻找等待定位元素{}".format(loc))
-            return WebDriverWait(self.driver,3).until(Ec.visibility_of_element_located(loc))
+            try:
+                #self.getLogger().info("寻找等待定位元素{}成功".format(loc))
+                return WebDriverWait(self.driver,3).until(Ec.visibility_of_element_located(loc))
+            except:
+                print(self.getLogger().info("寻找等待定位元素{}失败".format(loc)))
     def ele_dispaly(self,loc):#判断是否找到元素,用作断言
         try:
             self.Wait_element(loc).is_displayed()
